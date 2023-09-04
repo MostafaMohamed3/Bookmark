@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container px-4">
+            <h2 class="my-5 text-muted">Bookmark</h2>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <hr>
+            <div class="p-3">
+                <div class="bookmark-body bg-secondary bg-opacity-25 text-center p-4">
+                    <h3 class="my-5">Bookmark your favorite sites</h3>
+                    <h6 class="mt-3 fw-bolder">Site Name</h6>
+                    <input type="text" placeholder="Bookmark Name" oninput="validateSiteName()" class="w-75 shadow border-0 rounded-1 my-3 py-1 mx-auto form-control" id="bookmarkName">
+                    <div id="bookmark-name-alert" class="alert alert-danger border border-danger w-75 mx-auto p-2 d-none" role="alert">
+                        The name must start with a capital letter and from 3 to 8 letters!  &nbsp; &nbsp; &nbsp;  ex: Google
+                    </div>
+                    <h6 class="mt-3 fw-bolder">Site URL</h6>
+                    <input type="text" placeholder="Website URL" oninput="validateSiteUrl()" class="w-75 shadow border-0 rounded-1 my-3 py-1 mx-auto form-control" id="URL">
+                    <div id="url-alert" class="alert alert-danger border border-danger w-75 mx-auto p-2 d-none" role="alert">
+                        You must type the name of the site and then (.com or .net)!  &nbsp; &nbsp; &nbsp;   ex:  google.com
+                    </div>
+                    <button class="btn btn-primary d-block mx-auto my-3 px-4" id="btnSubmit">Submit</button>
+                </div>
+                <div class="sites-container">
+                    
+                </div>
+            </div>
+            <hr>
+        </div>
+    </section>
+    <footer class="container px-4">
+        <p class="fw-bolder text-muted">© 2022 Bookmarker Inc.</p>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
